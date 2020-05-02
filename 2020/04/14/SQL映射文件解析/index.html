@@ -268,19 +268,19 @@
         </a>
         
         <a  class=""
-           href="/2020/04/23/%E6%AB%BB%E4%BA%95/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="櫻井">櫻井</span>
-            <span class="post-date" title="2020-04-23 10:31:14">2020/04/23</span>
-        </a>
-        
-        <a  class=""
            href="/2020/04/14/SQL%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="SQL映射文件解析">SQL映射文件解析</span>
             <span class="post-date" title="2020-04-14 10:18:04">2020/04/14</span>
+        </a>
+        
+        <a  class=""
+           href="/2020/04/23/%E6%AB%BB%E4%BA%95/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="櫻井">櫻井</span>
+            <span class="post-date" title="2020-04-23 10:31:14">2020/04/23</span>
         </a>
         
     </nav>
@@ -307,7 +307,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-05-02 13:27:47'>2020-04-14 10:18</time>
+        创建时间:<time class="date" title='更新时间: 2020-05-02 13:34:53'>2020-04-14 10:18</time>
         
     </div>
     <div class="article-meta">
@@ -329,7 +329,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SQL映射文件解析"><span class="toc-text">SQL映射文件解析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、MyBatis取值方式"><span class="toc-text">一、MyBatis取值方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-属性名-是参数的预编译方式，参数的位置都用？替代，安全，一定程度上防止Sql注入，多用。"><span class="toc-text">1.#{属性名} 是参数的预编译方式，参数的位置都用？替代，安全，一定程度上防止Sql注入，多用。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-属性名-不是参数预编译，而是直接和sql语句进行拼串，不安全，一般常用于动态表。例如："><span class="toc-text">2.${属性名} 不是参数预编译，而是直接和sql语句进行拼串，不安全，一般常用于动态表。例如：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、返回List和封装Map"><span class="toc-text">二、返回List和封装Map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-查询单个员工"><span class="toc-text">1.查询单个员工</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-查询多个员工"><span class="toc-text">2.查询多个员工</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-查询返回一个List"><span class="toc-text">(1)查询返回一个List</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-查询返回一个Map"><span class="toc-text">(2)查询返回一个Map</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、resultMap自定义封装规则"><span class="toc-text">三、resultMap自定义封装规则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-默认MyBatis自动封装结果集"><span class="toc-text">1.默认MyBatis自动封装结果集</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-按照列名和属性一一对应规则（不区分大小写）"><span class="toc-text">(1)按照列名和属性一一对应规则（不区分大小写）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-如果不一一对应"><span class="toc-text">(2)如果不一一对应</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#a-开启驼峰命名法"><span class="toc-text">a.开启驼峰命名法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#b-起别名"><span class="toc-text">b.起别名</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、联合查询"><span class="toc-text">四、联合查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-自定义封装规则（级联属性封装）"><span class="toc-text">1.自定义封装规则（级联属性封装）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-association-表示对象"><span class="toc-text">2.association(表示对象)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-collection-表示集合"><span class="toc-text">3.collection(表示集合)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-分步查询"><span class="toc-text">4.分步查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-分步查询"><span class="toc-text">(1)分步查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-collection分步查询"><span class="toc-text">(2)collection分步查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-分步查询总结"><span class="toc-text">(3)分步查询总结</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SQL映射文件解析"><span class="toc-text">SQL映射文件解析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、MyBatis取值方式"><span class="toc-text">一、MyBatis取值方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-属性名"><span class="toc-text">1.#{属性名}</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-属性名"><span class="toc-text">2.${属性名}</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、返回List和封装Map"><span class="toc-text">二、返回List和封装Map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-查询单个员工"><span class="toc-text">1.查询单个员工</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-查询多个员工"><span class="toc-text">2.查询多个员工</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-查询返回一个List"><span class="toc-text">(1)查询返回一个List</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-查询返回一个Map"><span class="toc-text">(2)查询返回一个Map</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、resultMap自定义封装规则"><span class="toc-text">三、resultMap自定义封装规则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-默认MyBatis自动封装结果集"><span class="toc-text">1.默认MyBatis自动封装结果集</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-按照列名和属性一一对应规则（不区分大小写）"><span class="toc-text">(1)按照列名和属性一一对应规则（不区分大小写）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-如果不一一对应"><span class="toc-text">(2)如果不一一对应</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#a-开启驼峰命名法"><span class="toc-text">a.开启驼峰命名法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#b-起别名"><span class="toc-text">b.起别名</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、联合查询"><span class="toc-text">四、联合查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-自定义封装规则（级联属性封装）"><span class="toc-text">1.自定义封装规则（级联属性封装）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-association-表示对象"><span class="toc-text">2.association(表示对象)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-collection-表示集合"><span class="toc-text">3.collection(表示集合)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-分步查询"><span class="toc-text">4.分步查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-分步查询"><span class="toc-text">(1)分步查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-collection分步查询"><span class="toc-text">(2)collection分步查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-分步查询总结"><span class="toc-text">(3)分步查询总结</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -351,8 +351,8 @@
 <ul>
 <li><a href="#sql%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90">SQL映射文件解析</a><ul>
 <li><a href="#%E4%B8%80mybatis%E5%8F%96%E5%80%BC%E6%96%B9%E5%BC%8F">一、MyBatis取值方式</a><ul>
-<li><a href="#1%E5%B1%9E%E6%80%A7%E5%90%8D-%E6%98%AF%E5%8F%82%E6%95%B0%E7%9A%84%E9%A2%84%E7%BC%96%E8%AF%91%E6%96%B9%E5%BC%8F%E5%8F%82%E6%95%B0%E7%9A%84%E4%BD%8D%E7%BD%AE%E9%83%BD%E7%94%A8%E6%9B%BF%E4%BB%A3%E5%AE%89%E5%85%A8%E4%B8%80%E5%AE%9A%E7%A8%8B%E5%BA%A6%E4%B8%8A%E9%98%B2%E6%AD%A2sql%E6%B3%A8%E5%85%A5%E5%A4%9A%E7%94%A8">1.#{属性名} 是参数的预编译方式，参数的位置都用？替代，安全，一定程度上防止Sql注入，多用。</a></li>
-<li><a href="#2%E5%B1%9E%E6%80%A7%E5%90%8D-%E4%B8%8D%E6%98%AF%E5%8F%82%E6%95%B0%E9%A2%84%E7%BC%96%E8%AF%91%E8%80%8C%E6%98%AF%E7%9B%B4%E6%8E%A5%E5%92%8Csql%E8%AF%AD%E5%8F%A5%E8%BF%9B%E8%A1%8C%E6%8B%BC%E4%B8%B2%E4%B8%8D%E5%AE%89%E5%85%A8%E4%B8%80%E8%88%AC%E5%B8%B8%E7%94%A8%E4%BA%8E%E5%8A%A8%E6%80%81%E8%A1%A8%E4%BE%8B%E5%A6%82">2.${属性名} 不是参数预编译，而是直接和sql语句进行拼串，不安全，一般常用于动态表。例如：</a></li>
+<li><a href="#1%E5%B1%9E%E6%80%A7%E5%90%8D">1.#{属性名}</a></li>
+<li><a href="#2%E5%B1%9E%E6%80%A7%E5%90%8D">2.${属性名}</a></li>
 </ul>
 </li>
 <li><a href="#%E4%BA%8C%E8%BF%94%E5%9B%9Elist%E5%92%8C%E5%B0%81%E8%A3%85map">二、返回List和封装Map</a><ul>
@@ -393,7 +393,8 @@
 </ul>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-<h1 id="SQL映射文件解析"><a href="#SQL映射文件解析" class="headerlink" title="SQL映射文件解析"></a>SQL映射文件解析</h1><h2 id="一、MyBatis取值方式"><a href="#一、MyBatis取值方式" class="headerlink" title="一、MyBatis取值方式"></a>一、MyBatis取值方式</h2><h3 id="1-属性名-是参数的预编译方式，参数的位置都用？替代，安全，一定程度上防止Sql注入，多用。"><a href="#1-属性名-是参数的预编译方式，参数的位置都用？替代，安全，一定程度上防止Sql注入，多用。" class="headerlink" title="1.#{属性名} 是参数的预编译方式，参数的位置都用？替代，安全，一定程度上防止Sql注入，多用。"></a>1.#{属性名} 是参数的预编译方式，参数的位置都用？替代，安全，一定程度上防止Sql注入，多用。</h3><h3 id="2-属性名-不是参数预编译，而是直接和sql语句进行拼串，不安全，一般常用于动态表。例如："><a href="#2-属性名-不是参数预编译，而是直接和sql语句进行拼串，不安全，一般常用于动态表。例如：" class="headerlink" title="2.${属性名} 不是参数预编译，而是直接和sql语句进行拼串，不安全，一般常用于动态表。例如："></a>2.${属性名} 不是参数预编译，而是直接和sql语句进行拼串，不安全，一般常用于动态表。例如：</h3><p>  log_2020_4、log_2020_5……等日志表，可用${表名}来替换表名，而#{}不行，因为只有参数支持预编译。</p>
+<h1 id="SQL映射文件解析"><a href="#SQL映射文件解析" class="headerlink" title="SQL映射文件解析"></a>SQL映射文件解析</h1><h2 id="一、MyBatis取值方式"><a href="#一、MyBatis取值方式" class="headerlink" title="一、MyBatis取值方式"></a>一、MyBatis取值方式</h2><h3 id="1-属性名"><a href="#1-属性名" class="headerlink" title="1.#{属性名}"></a>1.#{属性名}</h3><p>是参数的预编译方式，参数的位置都用？替代，安全，一定程度上防止Sql注入，多用。</p>
+<h3 id="2-属性名"><a href="#2-属性名" class="headerlink" title="2.${属性名}"></a>2.${属性名}</h3><p>不是参数预编译，而是直接和sql语句进行拼串，不安全，一般常用于动态表。例如：<br>  log_2020_4、log_2020_5……等日志表，可用${表名}来替换表名，而#{}不行，因为只有参数支持预编译。</p>
 <h2 id="二、返回List和封装Map"><a href="#二、返回List和封装Map" class="headerlink" title="二、返回List和封装Map"></a>二、返回List和封装Map</h2><h3 id="1-查询单个员工"><a href="#1-查询单个员工" class="headerlink" title="1.查询单个员工"></a>1.查询单个员工</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//EmployeeDao.java</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Empoyee <span class="title">getEmpById</span><span class="params">(Integer id)</span></span>;</span><br></pre></td></tr></table></figure>
 <h3 id="2-查询多个员工"><a href="#2-查询多个员工" class="headerlink" title="2.查询多个员工"></a>2.查询多个员工</h3><h4 id="1-查询返回一个List"><a href="#1-查询返回一个List" class="headerlink" title="(1)查询返回一个List"></a>(1)查询返回一个List</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//EmployeeDao.java</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Empoyee&gt; <span class="title">getAllEmps</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">//Employee.xml</span></span><br><span class="line"><span class="comment">//resultType="" 如果返回的是集合，写的是集合里面元素的类型</span></span><br><span class="line">&lt;select id=<span class="string">"getAllEmps"</span> resultType=<span class="string">"……bean.Empoyee"</span>&gt;</span><br><span class="line">	select * from t_employee</span><br><span class="line">&lt;/select&gt;</span><br><span class="line"><span class="comment">//EmployeeServiceImpl.java</span></span><br><span class="line">List&lt;Empoyee&gt; allEmps = employeeDao.getAllEmps();</span><br><span class="line"><span class="keyword">for</span> (Employee employee : allEmps)&#123;</span><br><span class="line">	System.out.println(employee);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//打印</span><br><span class="line">Employee [id=1,empNmae=admin,email=admin@qq.com]</span><br><span class="line">……</span><br><span class="line">Employee [id=n,empNmae=adminn, email=adminn@qq.com]</span><br></pre></td></tr></table></figure>
@@ -443,7 +444,7 @@
     
     <p><span class="copy-title">本文作者:</span><a  title="soft5">soft5</a></p>
     <p><span class="copy-title">发布时间:</span>2020-04-14, 10:18:04</p>
-    <p><span class="copy-title">最后更新:</span>2020-05-02, 13:27:47</p>
+    <p><span class="copy-title">最后更新:</span>2020-05-02, 13:34:53</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/14/SQL%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90/" title="SQL映射文件解析">https://soft5.github.io/2020/04/14/SQL%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E8%A7%A3%E6%9E%90/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
